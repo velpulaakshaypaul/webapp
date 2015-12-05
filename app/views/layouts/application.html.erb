@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Application System</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= render '/layouts/bootstrap' %>
+  <%= stylesheet_link_tag 'style' %>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'>
+  <!--link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+  <script src='lib/jquery.min.js'></script>
+  <script src='lib/momentjs.min.js'></script>
+  <script src='fullcalendar/fullcalendar.js'></script-->
+</head>
+<body>
+<!--NAVBAR-->
+
+  <%= render 'layouts/navbar' %>
+
+<!--END NAVBAR-->
+
+    <%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @internship_application.job_id %>
+</p>
+
+<p>
+  <strong>Applicant:</strong>
+  <%= @internship_application.applicant_id %>
+</p>
+
+<p>
+  <strong>Answer 1:</strong>
+  <%= @internship_application.answer1 %>
+</p>
+
+<p>
+  <strong>Answer 2:</strong>
+  <%= @internship_application.answer2 %>
+</p>
+
+<p>
+  <strong>Answer 3:</strong>
+  <%= @internship_application.answer3 %>
+</p>
+
+<p>
+  <strong>Answer 4:</strong>
+  <%= @internship_application.answer4 %>
+</p>
+
+<%= link_to 'Edit', edit_internship_application_path(@internship_application) %> |
+<%= link_to 'Back', internship_applications_path %>
